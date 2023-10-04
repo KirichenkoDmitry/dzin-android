@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Дзынь</title>
+
+    <!-- Мета-теги для иконок и цветовой схемы -->
+    <link rel="apple-touch-icon" sizes="512x512" href="dzin.png">
+    
+    <!-- Мета-теги для Windows и цветовой схемы -->
+    <link rel="manifest" href="/dzin-android/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#000000">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!--     <meta name="viewport" content="initial-scale=1" /> -->
+
+    
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        
+        /* Стиль для центрирования кнопки */
+        .centered-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 100% высоты окна просмотра */
+        }
+
+        /* Стиль для кнопки скачивания APK */
+        .download-button {
+            padding: 15px 30px; /* Задаем отступы для кнопки */
+            border-radius: 20px; /* Задаем скругленные углы */
+            font-size: 18px; /* Задаем размер шрифта */
+            background-color: #3498db; /* Задаем цвет фона кнопки */
+            color: #ffffff; /* Задаем цвет текста кнопки */
+            border: none; /* Убираем границу кнопки */
+            cursor: pointer; /* Изменяем указатель мыши при наведении на кнопку */
+            transition: background-color 0.3s; /* Добавляем анимацию при наведении */
+            margin-top: 240px;
+        }
+
+        .download-button:hover {
+            background-color: #2980b9; /* Изменяем цвет фона при наведении */
+        }
+    </style>
+</head>
+<body>
+
+        <div class="centered-button">
+        <a href="/dzin-android/app-release.apk" download="app-release.apk">
+            <button class="download-button">Скачать приложение</button>
+        </a>
+    </div>
+
+  <script>
+</script>
+</body>
+</html>
