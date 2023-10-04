@@ -17,7 +17,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="viewport" content="initial-scale=1" />
 
-    
     <style>
         html, body {
             margin: 0;
@@ -44,9 +43,9 @@
 
         /* Стиль для кнопки скачивания APK */
         .download-button {
-            padding: 20px 40px; /* Задаем отступы для кнопки */
-            border-radius: 30px; /* Задаем скругленные углы */
-            font-size: 32px; /* Задаем размер шрифта */
+            padding: 15px 30px; /* Задаем отступы для кнопки */
+            border-radius: 16px; /* Задаем скругленные углы */
+            font-size: 24px; /* Задаем размер шрифта */
             background-color: #3498db; /* Задаем цвет фона кнопки */
             color: #ffffff; /* Задаем цвет текста кнопки */
             border: none; /* Убираем границу кнопки */
@@ -58,17 +57,18 @@
         .download-button:hover {
             background-color: #2980b9; /* Изменяем цвет фона при наведении */
         }
+
+        /* Убираем активное состояние (голубое свечение) при нажатии на кнопку */
+        .download-button:focus {
+            outline: none;
+        }
     </style>
 </head>
 <body>
-
-        <div class="centered-button">
+    <div class="centered-button">
         <a href="/dzin-android/app-release.apk" download="app-release.apk">
             <button class="download-button">Скачать приложение</button>
         </a>
     </div>
-
-  <script>
-</script>
 </body>
 </html>
