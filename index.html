@@ -51,15 +51,15 @@
             border: none; /* Убираем границу кнопки */
             cursor: pointer; /* Изменяем указатель мыши при наведении на кнопку */
             transition: background-color 0.3s; /* Добавляем анимацию при наведении */
-            margin-top: calc(100vh - 280px);
+            margin-top: calc(100vh - 320px);
         }
 
-        /* Убираем активное состояние (голубое свечение) при нажатии на кнопку */
-   .download-button:focus,
-    .download-button:active {
-        outline: none;
-        box-shadow: none;
-    }
+.download-button:focus,
+.download-button:active {
+    outline: none !important; /* !important может быть необходим, чтобы переопределить стили браузера */
+    box-shadow: none !important;
+    -webkit-tap-highlight-color: transparent; /* Для мобильных браузеров */
+}
 </style>
 Теперь при нажатии на кнопку голубое свечение будет отключено.
 
